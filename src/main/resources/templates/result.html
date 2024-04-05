@@ -1,0 +1,17 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>Getting Started: Handling Form Submission</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+</head>
+<body>
+<body style="background-color: rgb(174, 170, 170);">
+
+<h1>Your file has been successfully uploaded to S3</h1>
+<p th:text="'id: ' + ${greeting.id}" />
+<p th:text="'content: ' + ${greeting.body}" />
+
+<p>Click the link if you'd like to 
+<a href="startup.html">Upload a new file to S3</a>
+</body>
+</html>

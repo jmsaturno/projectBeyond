@@ -1,0 +1,20 @@
+---
+files:
+  - path: pb/src/main/java/com/projectBeyond/pb/fileupload/ReceivedInfo.java
+    services:
+      - s3
+  - path: pb/src/main/java/com/projectBeyond/pb/fileupload/S3Uploader.java
+    services:
+      - s3
+  - path: pb/src/main/java/com/projectBeyond/pb/fileupload/StartupController.java
+    services:
+      - s3
+  - path: pb/src/main/resources/templates/images/awslogo.png
+    services:
+      - s3
+  - path: pb/src/main/resources/templates/result.html
+    services:
+      - s3
+  - path: pb/src/main/resources/templates/startup.html
+    services:
+      - s3
