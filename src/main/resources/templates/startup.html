@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html xmlns:th="https://www.thymeleaf.org">
+<head>
+    <title>S3 File Uploader</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <link rel="stylesheet" th:href="|https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css|"/>
+</head>
+<body>
+<body style="background-color: rgb(174, 170, 170);">
+<div class="container">
+<h1>S3 File Uploader</h1>
+<p>You can upload a text file that will be sent to an S3 bucket.</p>
+<form action="#" th:action="@{/receivedinfo}" th:object="${receivedinfo}" method="post">
+    <div class="form-group">
+        <p>File: <input type="file"  class="form-control" th:field="*{myfile}" /></p>
+    </div>
+    <div class="form-group">
+        <p>Name of file: <input type="text" class="form-control" th:field="*{filename}" /></p>
+    </div>
+    <div class="form-group">
+        <p>Amazon S3 Bucket Name: <input type="text" class="form-control" th:field="*{bucketname}" /></p>
+    </div>
+    <p><input type="submit" value="Submit" /> <input type="reset" value="Reset" /></p>
+</form>
+</div>
+<img src="images/awslogo.png" alt="My image" width="120" height="80">
+</body>
+</html>
