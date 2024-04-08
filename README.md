@@ -12,7 +12,7 @@ boot application that uploads an file to a public S3 bucket.
 You must have an AWS account and Java 17 SDK.
 
 ## Java Classes
----
+
 Description of all the Java Classes used in this project.
 
 ### projectBeyondApplication class - Main Spring Boot Java class
@@ -25,26 +25,28 @@ Model for the Spring Boot application. Contains the input values obtained from t
 
 ### S3Uploader class - S3 API class
 
-Add text here 
+Takes inputs from the /received endpoint (bucket name, file, and file name) to upload the file into requested Amazon S3 Bucket. This class assumes the bucket exists in the us-east-1 region.
 
 ### StartupController - Spring Boot Controller class
 
 Functions as controller for the Spring Boot application by handling the HTTP requests and returns each template view.
 
 ## HTML Files
----
+
 Description of all the HTML files included in this project.
 
 ### Startup HTML
 
 The introductory page when interacting with the Spring Boot application. The page allows for input of the file to upload, the file name, and the Amazon S3 bucket name.
+![Startup Page](images/startup.png)
 
 ### Result HTML
 
 The redirecting page after the submit button is clicked. Functions as the acknowledgement that the file is uploaded to the bucket.
+![Result Page](images/result.png)
 
 ## Cloud Technologies
----
+
 Description of the Cloud Technologies used to deploy the Spring Boot applicaiton.
 
 ### AWS Elastic Beanstalk
